@@ -35,7 +35,7 @@ graph LR
 
     subgraph "The Worker (NovaMake)"
         MQ -->|2. Fetch STL| Worker[Slicer Worker]
-        Worker -->|3. Analyze Geometry| Mind[NovaMind (Geometry Engine)]
+        Worker -->|3. Analyze Geometry| Mind["NovaMind (Geometry Engine)"]
         Worker -->|4. Generate G-Code| Cura[Headless CuraEngine]
     end
 
